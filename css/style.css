@@ -1,0 +1,476 @@
+/*This style is for all web pages.*/
+*{
+margin: 0;
+padding: 0;
+font-family: Arial;
+}
+
+/* background for webpages */
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/pic2.jpeg);
+  height: 1000px;
+  background-size:  cover;
+  background-position: center;
+}
+/* Start of navigation bar style */
+ul {
+float: right;
+list-style-type: none;
+margin-top: 25px;
+margin-right: 15px;
+}
+
+ul li{
+display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 25px;
+  border: 2px solid transparent;
+  transition: 1s ease;
+}
+
+ul li  a:hover{
+  background-color: white;
+  color:black;
+}
+
+//ul li.active a{
+  background-color: white;
+  color:black;
+}
+/* End of navigation bar style */
+
+/* Aston Logo modification */
+.logo img{
+  float: left;
+  width: 250px;
+  height: auto;
+}
+
+/* Style for index page */
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title positon */
+.title{
+  position: absolute;
+  top: 350px;
+  left: 450px;
+  transition: translate(-50%,-50%);
+}
+
+/* Title font */
+.title h1{
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+/* information text postion */
+.opening{
+  position: absolute;
+  top: 475px;
+  left: 280px;
+  transition: translate(-50%,-50%);
+}
+
+/* information font modification  */
+.opening p1{
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+/*  Start of Clock Positon and Style */
+.datetime{
+  background: #10101E;
+  position: absolute;
+  top: 120px;
+  left: 1000px;
+  transition: translate(-50%,-50%);
+  color: white;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #0690D4;
+  border-radius: 3px;
+  transition: 0.5s;
+  transition-property: background,  box-shadow;
+}
+
+.datetime:hover{
+  background:#0690D4;
+  box-shadow: 0 0 30px #0690D4;
+}
+
+.date{
+font-size: 20px;
+font-weight: 600;
+text-align: center;
+letter-spacing: 3px;
+}
+.time{
+font-size: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.time span:last-child{
+  background: #0690D4;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+/*  End of Clock Positon and Style */
+
+
+/*  Sports Event Title */
+.spt{
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  position: absolute;
+  top: 130px;
+  left: 520px;
+  transition: translate(-50%,-50%);
+}
+
+/*  Sports Event Information */
+.s1{
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  position: absolute;
+  top: 230px;
+  left: 200px;
+  transition: translate(-50%,-50%);
+}
+
+/*  Culture Events Title */
+.cult{
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  position: absolute;
+  top: 130px;
+  left: 520px;
+  transition: translate(-50%,-50%);
+}
+/*  Culture Events Information */
+.c1{
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  position: absolute;
+  top: 230px;
+  left: 200px;
+  transition: translate(-50%,-50%);
+}
+
+/*  Other Events Title */
+.other{
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  position: absolute;
+  top: 130px;
+  left: 520px;
+  transition: translate(-50%,-50%);
+
+}
+/*  Other Events Information */
+.o1{
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  position: absolute;
+  top: 230px;
+  left: 200px;
+  transition: translate(-50%,-50%);
+}
+
+/*  Details Title */
+.detail{
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  position: absolute;
+  top: 130px;
+  left: 520px;
+  transition: translate(-50%,-50%);
+}
+
+/*  Details Information */
+.d1{
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  position: absolute;
+  top: 230px;
+  left: 230px;
+  transition: translate(-50%,-50%);
+}
+
+/*  Booking Title */
+.booking{
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  position: absolute;
+  top: 130px;
+  left: 500px;
+  transition: translate(-50%,-50%);
+}
+/*  Booking Information */
+.b1{
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  position: absolute;
+  top: 230px;
+  left: 350px;
+  transition: translate(-50%,-50%);
+}
+
+/*  Style for image slider */
+.image-slider{
+  position: absolute;
+  top: 300px;
+  left: 340px;
+  transition: translate(-50%,-50%);
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+
+/*css for manual slide navigation*/
+
+.nav-man{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #0690D4;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #0690D4;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*auto navigation for image slider*/
+
+.nav-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.nav-auto div{
+  border: 2px solid #0690D4;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.nav-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #0690D4;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #0690D4;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #0690D4;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #0690D4;
+}
+
+/*Table modification*/
+
+.table-container{
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  transition: translate(-50%,-50%);
+  color: white;
+  padding: 0 10%;
+  margin: 40px auto;
+}
+
+.table{
+width: 100%;
+border-collapse: collapse;
+}
+.table thead {
+  background-color: #0690D4;
+}
+.table thead tr th {
+  font-size: 14px;
+  font-weight: 600px;
+  letter-spacing: 0.35px;
+  color:white;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid white;
+}
+
+.table tbody tr td{
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: white;
+  background-color: #3c3f44;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.table tbody tr td .lk-btn{
+  width: 150px;
+  text-decoration: none;
+  line-height: 50px;
+  display: inline-block;
+  background-color: #0690D4;
+  font-weight: medium;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  user-select:none;
+  border: 1px solid transparent;
+  font-size: 14px;
+  opacity: 1;
+
+}
+.table tbody tr td .lk-btn:hover{
+  background-color: white;
+  color:black;
+}
+
+@@media(max-width:900px){
+  .table thead{
+    display: none;
+  }
+  .table, .table tbody, .table tr,.table td{
+    display: block;
+    width:100%;
+  }
+} /*  End of Table Style */
+
+
+/*  Start of Form Style */
+.form-container{
+width: 400px;
+ background: #9BA8B4;
+ padding: 40px 20px;
+ box-sizing: border-box;
+ position: absolute;
+ top: 500px;
+ left: 700px;
+ transform: translate(-50%, -50%);}
+ h2{text-align: center;
+     color: white;
+      font-weight: normal;
+      margin-bottom: 20px;
+}
+
+.form-container input{
+  width: 100%;
+  background: transparent;
+   border: 1px solid white;
+    border-radius: 3px;
+     padding: 6px 15px;
+     box-sizing: border-box;
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: white;
+}
+
+
+.form-container input[type="submit"]{
+   background: #0690D4;
+    border: 0;
+    cursor: pointer;
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+   }
+.form-container input[type="submit"]:hover{ background: red;
+  transition: 0.8s;}
+
+  .form-container ::placeholder{color: white;}
+
+  /*  End of Form Style */

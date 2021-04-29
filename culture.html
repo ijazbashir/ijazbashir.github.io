@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture Events</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+<body>
+  <header> <!--Aston Logo-->
+    <div class="main">
+      <div class="logo">
+        <img src="img/logo.png" alt="Aston University">
+      </div>
+      <ul> <!--Navigation bar-->
+        <li class="active"> <a href="index.html"> Home</a> </li>
+        <li> <a href="sports.html"> Sports</a> </li>
+        <li> <a href="culture.html"> Culture</a> </li>
+        <li> <a href="others.html"> Other</a> </li>
+        <li> <a href="details.html"> Details</a> </li>
+        <li> <a href="booking.html"> Booking</a> </li>
+
+      </ul>
+    </div>
+    <div class="cult">
+        <h1> <u>Culture Events</u> </h1> <!--Title of Page-->
+    </div>
+    <div class="c1"> <!--Information about page.-->
+        <p> This is the culture events page where all information about the events on culture is available on this page. </p>
+    </div>
+      <div class="image-slider">
+        <div class="slides">
+          <!--start of radio buttons -->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!-- end of radio buttons -->
+          <!--start of image slider-->
+          <div class="slide first">
+            <img src="img/pic6.jpeg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="img/pic13.png" alt="Art">
+           </div>
+
+          <div class="slide">
+            <img src="img/pic15.jpeg" alt="History">
+          </div>
+
+          <div class="slide">
+            <img src="img/pic17.jpeg" alt="Theatre">
+          </div>
+          <!--end of image slider-->
+          <!--start of automatic navigation -->
+          <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--end of automatic navigation  -->
+        </div>
+        <!-- start of manual navigation-->
+        <div class="nav-man">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--end of manual navigation -->
+      </div>
+      <!--end of image slider-->
+
+      <!--start of javascript to make image slider run automatic -->
+
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+
+     <!--end of javascript to make image slider run automatic -->
+
+
+
+
+    </header>
+</body>
+
+</html>
